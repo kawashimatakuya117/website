@@ -1,0 +1,169 @@
+
+
+html { 
+    /* scroll-behavior: smooth; */
+    background-image: url(images/top.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+    color: #fff;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  footer{
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    background-color:black;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+
+  }
+
+  .contents-container{
+    margin: auto;
+    text-align: center;
+  }
+
+  .contents
+  {
+    width: 780px;
+    margin: auto;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .contents img{
+    width: 100%;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding-bottom: 5rem;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  
+  ul li {
+    margin-bottom: 2rem;
+    text-decoration: none;
+  }
+
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  ul li a:hover{
+    color: #d3d3d3;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  .contents h1{
+    margin: 5rem;
+  }
+  h2{
+    margin-bottom: 4rem;
+  }
+
+  p{
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  #gaikan #kannnai #omake{
+    padding-top: 3rem;
+  }
+
+
+  /* モバイル用スタイル */
+@media screen and (max-width: 480px) {
+    p{
+        font-size: 1.5rem;
+    }
+    .container {
+        width: 100%;
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: 100px;
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+      position: -webkit-sticky;  /* for Safari */
+        position: sticky;
+        top: 0px;  /* 画面上端オフセット */
+    }
+
+    .sidebar ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position: -webkit-sticky;  /* for Safari */
+        position: sticky;
+        top: 0px;  /* 画面上端オフセット */
+    }
+    
+    .sidebar h2 
+    {
+        display: none;
+    }
+  
+    .contents-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  /* タブレット用スタイル */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .sidebar {
+      width: 200px;
+      position: fixed;
+    }
+  
+    .contents-container {
+      margin-left: 200px;
+    }
+  }
+  
+  
+
+
